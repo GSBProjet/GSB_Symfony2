@@ -400,4 +400,19 @@ public function getUtilisateurTablette(){
         $lesLignes = $stmt->fetchAll();
         return $lesLignes;
 }
+
+public function ajouterTablette($idTablette,$memoireInt,$typeTablette,$memoireExt,$dateAffectation){
+                
+                $req = "insert into tablette 
+                values('',:idTablette,:memoireInt,:typeTablette,'$memoireExt',:dateAffectation)";
+                $stmt = PdoGsb::$monPdo->prepare($req);
+                $stmt->bindParam(':idTablette', $idTablette);
+                $stmt->bindParam(':memoireInt', $memeoireInt);
+                $stmt->bindParam(':typeTablette', $typeTablette);
+                $stmt->bindParam(':memoireExt', $memeoireExt);
+                $stmt->bindParam(':dateAffectation', $dateAffectation);
+                $stmt->execute();
+
+        }
+
 ?>

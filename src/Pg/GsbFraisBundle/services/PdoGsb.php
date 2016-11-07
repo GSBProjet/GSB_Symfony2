@@ -384,13 +384,16 @@ class PdoGsb{
                 $req = "insert into tablette 
                 values('',:idTablette,:memoireInt,:typeTablette,'$memoireExt',:dateAffectation)";
                 $stmt = PdoGsb::$monPdo->prepare($req);
-                $stmt->bindParam(':idTablette', $idVisiteur);
-                $stmt->bindParam(':memoireInt', $mois);
-                $stmt->bindParam(':typeTablette', $libelle);
-                $stmt->bindParam(':memoireExt', $montant);
+                $stmt->bindParam(':idTablette', $idTablette);
+                $stmt->bindParam(':memoireInt', $memeoireInt);
+                $stmt->bindParam(':typeTablette', $typeTablette);
+                $stmt->bindParam(':memoireExt', $memeoireExt);
                 $stmt->bindParam(':dateAffectation', $dateAffectation);
                 $stmt->execute();
+
         }
+
+
 
 }
 ?>

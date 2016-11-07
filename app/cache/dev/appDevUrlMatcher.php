@@ -157,7 +157,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             // pg_gsb_frais_ajouttablette
             if ($pathinfo === '/daf/ajouttablette') {
-                return array (  '_controller' => 'Pg\\GsbFraisBundle\\Controller\\HomeController::ajoutTabletteAction',  '_route' => 'pg_gsb_frais_ajouttablette',);
+                return array (  '_controller' => 'Pg\\GsbFraisBundle\\Controller\\HomeController::ajouterTabletteAction',  '_route' => 'pg_gsb_frais_ajouttablette',);
             }
 
         }
