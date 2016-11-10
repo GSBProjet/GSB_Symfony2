@@ -2173,3 +2173,6 @@
 [2016-11-10 08:42:56] request.INFO: Matched route "pg_gsb_frais_daf". {"route_parameters":{"_controller":"Pg\\GsbFraisBundle\\Controller\\HomeController::dafAction","_route":"pg_gsb_frais_daf"},"request_uri":"http://172.19.1.27:8080/GSB_Symfony2/web/app_dev.php/daf"} []
 [2016-11-10 08:42:56] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2016-11-10 08:42:56] request.INFO: Matched route "_wdt". {"route_parameters":{"_controller":"web_profiler.controller.profiler:toolbarAction","token":"dcc3c9","_route":"_wdt"},"request_uri":"http://172.19.1.27:8080/GSB_Symfony2/web/app_dev.php/_wdt/dcc3c9"} []
+[2016-11-10 08:56:58] request.INFO: Matched route "pg_gsb_frais_daf". {"route_parameters":{"_controller":"Pg\\GsbFraisBundle\\Controller\\HomeController::dafAction","_route":"pg_gsb_frais_daf"},"request_uri":"http://172.19.1.27:8080/GSB_Symfony2/web/app_dev.php/daf"} []
+[2016-11-10 08:56:58] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2016-11-10 08:56:58] request.INFO: Matched route "_wdt". {"route_parameters":{"_controller":"web_profiler.controller.profiler:toolbarAction","token":"c83c8f","_route":"_wdt"},"request_uri":"http://172.19.1.27:8080/GSB_Symfony2/web/app_dev.php/_wdt/c83c8f"} []
