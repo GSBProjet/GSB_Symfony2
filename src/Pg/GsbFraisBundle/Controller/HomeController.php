@@ -53,7 +53,8 @@ class HomeController extends Controller
         $session->clear();
         return $this->render('PgGsbFraisBundle:Home:connexion.html.twig');
    }
-
+	
+	//fonction daf
    public function dafAction()
     {
       $pdo = $this->get('pg_gsb_frais.pdo');

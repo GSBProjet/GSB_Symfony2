@@ -21,20 +21,20 @@ class __TwigTemplate_f4cb5e976ba63f202caef02c41318ee58c066d471de15540361d2597f81
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8ddef4cfb3ebb78a46ac08e1f3992f6a6498f1edf8700230f9cdd77892dac318 = $this->env->getExtension("native_profiler");
-        $__internal_8ddef4cfb3ebb78a46ac08e1f3992f6a6498f1edf8700230f9cdd77892dac318->enter($__internal_8ddef4cfb3ebb78a46ac08e1f3992f6a6498f1edf8700230f9cdd77892dac318_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PgGsbFraisBundle::accueil.html.twig"));
+        $__internal_f7b8f21662b70bf91852d62e52d8d52a7e06ae4936d9fa81ae83341a9c488cd9 = $this->env->getExtension("native_profiler");
+        $__internal_f7b8f21662b70bf91852d62e52d8d52a7e06ae4936d9fa81ae83341a9c488cd9->enter($__internal_f7b8f21662b70bf91852d62e52d8d52a7e06ae4936d9fa81ae83341a9c488cd9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PgGsbFraisBundle::accueil.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_8ddef4cfb3ebb78a46ac08e1f3992f6a6498f1edf8700230f9cdd77892dac318->leave($__internal_8ddef4cfb3ebb78a46ac08e1f3992f6a6498f1edf8700230f9cdd77892dac318_prof);
+        $__internal_f7b8f21662b70bf91852d62e52d8d52a7e06ae4936d9fa81ae83341a9c488cd9->leave($__internal_f7b8f21662b70bf91852d62e52d8d52a7e06ae4936d9fa81ae83341a9c488cd9_prof);
 
     }
 
     // line 2
     public function block_menu($context, array $blocks = array())
     {
-        $__internal_d3362ef63e25dacc7630aabf77af5127def192f903f7b770e00263ce43f9543b = $this->env->getExtension("native_profiler");
-        $__internal_d3362ef63e25dacc7630aabf77af5127def192f903f7b770e00263ce43f9543b->enter($__internal_d3362ef63e25dacc7630aabf77af5127def192f903f7b770e00263ce43f9543b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
+        $__internal_06f3a82340f0d30cba3ebb847f30c82da77e18715f203c2cc079ea6e7ee1dd51 = $this->env->getExtension("native_profiler");
+        $__internal_06f3a82340f0d30cba3ebb847f30c82da77e18715f203c2cc079ea6e7ee1dd51->enter($__internal_06f3a82340f0d30cba3ebb847f30c82da77e18715f203c2cc079ea6e7ee1dd51_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
 
         // line 3
         echo "<div id=\"menuGauche\">
@@ -59,7 +59,10 @@ class __TwigTemplate_f4cb5e976ba63f202caef02c41318ee58c066d471de15540361d2597f81
         if (($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "get", array(0 => "EstDaf"), "method") == true)) {
             // line 14
             echo "          <li class=\"smenu\">
-              <a href=\"index.php?uc=validerFrais&action=voirFrais\" title=\"valider les frais\">Valider les frais</a>
+              <a href=\"";
+            // line 15
+            echo $this->env->getExtension('routing')->getPath("pg_gsb_frais_validerfraishorsforfais");
+            echo "\" title=\"valider les frais\">Valider les frais</a>
            </li>
            <li class=\"smenu\">
               <a href=\"daf\" title=\"valider les frais\">Affectation tablettes</a>
@@ -91,7 +94,7 @@ class __TwigTemplate_f4cb5e976ba63f202caef02c41318ee58c066d471de15540361d2597f81
      </div> 
 ";
         
-        $__internal_d3362ef63e25dacc7630aabf77af5127def192f903f7b770e00263ce43f9543b->leave($__internal_d3362ef63e25dacc7630aabf77af5127def192f903f7b770e00263ce43f9543b_prof);
+        $__internal_06f3a82340f0d30cba3ebb847f30c82da77e18715f203c2cc079ea6e7ee1dd51->leave($__internal_06f3a82340f0d30cba3ebb847f30c82da77e18715f203c2cc079ea6e7ee1dd51_prof);
 
     }
 
@@ -107,7 +110,7 @@ class __TwigTemplate_f4cb5e976ba63f202caef02c41318ee58c066d471de15540361d2597f81
 
     public function getDebugInfo()
     {
-        return array (  87 => 29,  84 => 28,  78 => 25,  71 => 22,  61 => 14,  59 => 13,  53 => 9,  47 => 7,  45 => 6,  40 => 3,  34 => 2,  11 => 1,);
+        return array (  90 => 29,  87 => 28,  81 => 25,  74 => 22,  64 => 15,  61 => 14,  59 => 13,  53 => 9,  47 => 7,  45 => 6,  40 => 3,  34 => 2,  11 => 1,);
     }
 }
 /* {% extends "PgGsbFraisBundle::layout.html.twig" %}*/
@@ -124,7 +127,7 @@ class __TwigTemplate_f4cb5e976ba63f202caef02c41318ee58c066d471de15540361d2597f81
 /* 	   <li class="smenu">*/
 /*               {% if app.session.get('EstDaf') == true %}*/
 /*           <li class="smenu">*/
-/*               <a href="index.php?uc=validerFrais&action=voirFrais" title="valider les frais">Valider les frais</a>*/
+/*               <a href="{{path('pg_gsb_frais_validerfraishorsforfais')}}" title="valider les frais">Valider les frais</a>*/
 /*            </li>*/
 /*            <li class="smenu">*/
 /*               <a href="daf" title="valider les frais">Affectation tablettes</a>*/
